@@ -437,7 +437,7 @@
           <div class="custom-accordion" id="accordion-faq">
             <div class="accordion-item">
               <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                <button class="btn btn-link" type="button" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
                   How to download and register?
                 </button>
               </h2>
@@ -459,7 +459,7 @@
                   How to create your paypal account?
                 </button>
               </h2>
-              <div id=" collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+              <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
                 <div class="accordion-body">
                   A small river named Duden flows by their place and supplies it
                   with the necessary regelialia. It is a paradisematic country, in
@@ -515,7 +515,7 @@
             <i class="bi bi-geo-alt flex-shrink-0"></i>
             <div>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>108 Queens Park Road Black Burn, United Kingdom, BB11SE</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -523,7 +523,7 @@
             <i class="bi bi-telephone flex-shrink-0"></i>
             <div>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+44 7476842194</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -531,7 +531,7 @@
             <i class="bi bi-envelope flex-shrink-0"></i>
             <div>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <p>info@megapos.ai</p>
             </div>
           </div><!-- End Info Item -->
 
