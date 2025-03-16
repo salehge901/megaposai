@@ -239,8 +239,6 @@
 
   </section><!-- /Features Section -->
 
-
-
   <!-- Services Section -->
   <section id="services" class="services section">
 
@@ -331,9 +329,6 @@
     </div>
 
   </section><!-- /Services Section -->
-
-
-
 
   <!-- Pricing Section -->
   <section id="pricing" class="pricing section">
@@ -494,9 +489,6 @@
     </div>
   </section><!-- /Faq Section -->
 
-
-
-
   <!-- Contact Section -->
   <section id="contact" class="contact section">
 
@@ -523,7 +515,7 @@
             <i class="bi bi-telephone flex-shrink-0"></i>
             <div>
               <h3>Call Us</h3>
-              <p>+44 7476842194</p>
+              <p>+44 1254445990</p>
             </div>
           </div><!-- End Info Item -->
 
