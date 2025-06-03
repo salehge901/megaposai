@@ -15,10 +15,11 @@ $contact->ajax = true;
 $contact->to = $receiving_email_address;
 $contact->from_name = 'MEGAPOS LTD';
 $contact->from_email = 'hello@megapos.ltd.uk';
-$contact->subject = 'Contact Us: ' . $_POST['subject'];
+$contact->subject = 'From Request Page';
 $contact->body = "
 Name: " . $_POST['name'] . "<br>
-Email: " . $_POST['email'] . "<br><br>
+Email: " . $_POST['email'] . "<br><br><br><br>
+Subject: " . $_POST['subject'] . "<br><br>
 Message: " . $_POST['message'] . "
 ";
 
