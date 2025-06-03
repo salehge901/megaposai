@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load PHPMailer classes
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/phpmailer/vendor/autoload.php';
 
 class PHP_Email_Form
 {
@@ -55,25 +55,25 @@ class PHP_Email_Form
 
             // $mail->send();
             // SMTP settings
-            // if ($this->smtp && is_array($this->smtp)) {
-            //     $mail->isSMTP();
-            //     $mail->Host = $this->smtp['host'];
-            //     $mail->SMTPAuth = true;
-            //     $mail->Username = $this->smtp['username'];
-            //     $mail->Password = $this->smtp['password'];
-            //     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            //     $mail->Port = $this->smtp['port'];
-            // }
+            if ($this->smtp && is_array($this->smtp)) {
+                $mail->isSMTP();
+                $mail->Host = $this->smtp['host'];
+                $mail->SMTPAuth = true;
+                $mail->Username = $this->smtp['username'];
+                $mail->Password = $this->smtp['password'];
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                $mail->Port = $this->smtp['port'];
+            }
 
             // // Email setup
-            // $mail->setFrom($this->from_email, $this->from_name);
-            // $mail->addAddress($this->to);
-            // $mail->Subject = $this->subject;
+            $mail->setFrom($this->from_email, $this->from_name);
+            $mail->addAddress($this->to);
+            $mail->Subject = $this->subject;
 
-            // $body = implode("\n", $this->messages);
-            // $mail->Body = $body;
+            $body = implode("\n", $this->messages);
+            $mail->Body = $body;
 
-            // $mail->send();
+            $mail->send();
             return $this->ajax ? 'OK' : 'Message sent successfully!';
         } catch (Exception $e) {
             return $this->ajax ? 'ERROR' : 'Mailer Error: ' . $mail->ErrorInfo;
